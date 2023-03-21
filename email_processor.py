@@ -4,7 +4,7 @@ class EmailProcessor:
         self.emails = []
         self.email = ''
         self.msgs = []
-        # define delimiter
+        # define delimiter to separate file
         self.delimiter = '=' * 200 + '\n'
     
     def fill_list(self, file = 'emails.txt'):
