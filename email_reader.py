@@ -126,8 +126,8 @@ class EmailReader:
 
                                 elif "attachment" in content_disposition:
                                     # make an "attachment" folder if it doesn't exist
-                                    if not os.path.isdir("attachment"):
-                                        os.mkdir("attachment")
+                                    if not os.path.isdir("attachments"):
+                                        os.mkdir("attachments")
 
                                     # download attachment
                                     filename = part.get_filename()
