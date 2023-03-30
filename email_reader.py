@@ -155,6 +155,41 @@ class EmailReader:
                             f.write('html\n')
                         f.write('\n' + '='*200 + '\n')
 
-emailreader = EmailReader()
-emailreader.search()
-emailreader.writetotxt()
+# read and write gmails
+# emailreader = EmailReader()
+# emailreader.search()
+# emailreader.writetotxt()
+
+# # read only outlook and 126 emails
+# import win32com.client
+# #other libraries to be used in this script
+# import os
+# from datetime import datetime, timedelta
+
+# outlook = win32com.client.Dispatch('outlook.application')
+# mapi = outlook.GetNamespace("MAPI")
+
+# for account in mapi.Accounts:
+# 	print(account.DeliveryStore.DisplayName)
+
+# inbox = mapi.GetDefaultFolder(6)
+
+# # inbox = mapi.GetDefaultFolder(6).Folders["Inbox"]
+# # Retrieve the messages
+# messages = inbox.Items
+# # Sort the messages by date received (oldest to newest)
+# messages.Sort("[ReceivedTime]", False)
+# # Get last n emails
+# n = 500
+# # Retrieve the 10 most recent messages in the folder
+# recent_messages = []
+# for i in range(n):
+#     if i >= len(messages):
+#         break
+#     message = messages[i+1] # messages are 1-indexed
+#     recent_messages.append(message)
+
+# # Loop through the messages and print the body content
+# for message in recent_messages:
+#     body_content = message.body
+#     # print(body_content)
