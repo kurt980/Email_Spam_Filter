@@ -156,9 +156,9 @@ class EmailReader:
                         f.write('\n' + '='*200 + '\n')
 
 # read and write gmails
-# emailreader = EmailReader()
-# emailreader.search()
-# emailreader.writetotxt()
+emailreader = EmailReader()
+emailreader.search()
+emailreader.writetotxt()
 
 # # read only outlook and 126 emails
 # import win32com.client
